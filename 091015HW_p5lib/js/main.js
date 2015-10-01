@@ -14,12 +14,15 @@ function draw(){
   stroke(255,200);
   strokeWeight(30);
   frameRate(600);
+
   triangle(xPos-50, yPos-50, mouseX-50, mouseY-50, mouseX -xPos-50, mouseY -yPos-50);
   triangle(xPos-50, yPos-50, mouseY-50, mouseX-50, mouseX -xPos-50, mouseY -yPos-50);
   triangle(xPos-50, yPos-50, mouseY-50, mouseX-50, mouseX -50 , mouseY -50);
   triangle(mouseX-50, mouseY-50, mouseY-50, mouseX-50, mouseX -xPos-50, mouseY - yPos-50);
+
   println("X postition of mouse " + mouseX);
   println("Y postition of mouse " + mouseY);
+  
   if (mouseX >= 512){
     mouseOverTriangle = true;
   }else if(mouseX <= 512){
