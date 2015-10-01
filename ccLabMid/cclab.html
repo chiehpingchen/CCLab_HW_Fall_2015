@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>where to chill</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylecc.css">
+<script type="text/javascript" src="scriptcc.js"></script>
+  </head>
+
+  <body>
+    <div id="pageTitle">
+      <h1>chillin beer map</h1>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="direction-info">
+      <div id="control">
+      </br>
+        D12&nbsp<input type="textbox" value="" id="start"> to<br />
+        BAR&nbsp<input type="textbox" id="end" value="" >
+        <input type="button" value="NAV" onclick="calcRoute()">
+      </div>
+      <div id="direction-panel"></div>
+    </div>
+
+
+    <script src="jquery-2.1.4.js"></script>
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        _uacct = "UA-162157-1";
+        urchinTracker();
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=yourApiKey&signed_in=true&libraries=places&callback=initMap" async defer></script>
+  </body>
+
+</html>
+
