@@ -56,7 +56,7 @@ void ofApp::draw()
     
 
     
-    float speed_increment=ofGetElapsedTimef(); // speed of animation
+    float speed_increment=ofGetElapsedTimef()*0.5; // speed of animation
 
     
     
@@ -121,20 +121,20 @@ void ofApp::draw()
     ofColor clr=ofColor::fromHex(0xfff400);
     ofSetColor(clr);
     circle_sin.close(); // to connect first and last point of our shape we need to use ‘close’ function
-    circle_sin= circle_sin.getSmoothed(smoothing_amount);
+    circle_sin= circle_sin.getSmoothed(1);
     circle_sin.draw();
     
     clr=ofColor::fromHex(0x000000);
     ofSetColor(clr);
     circle_cos.close();
-    circle_cos= circle_cos.getSmoothed(smoothing_amount);
+    circle_cos= circle_cos.getSmoothed(1);
     circle_cos.draw();
     
     
     clr=ofColor::fromHex(0xff0000);
     ofSetColor(clr);
     circle_un_cos.close();
-    circle_un_cos= circle_un_cos.getSmoothed(smoothing_amount);
+    circle_un_cos= circle_un_cos.getSmoothed(1);
     circle_un_cos.draw();
     
 }
